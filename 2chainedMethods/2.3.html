@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Problem 2.3</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <!-- Problem statement: Edit a Custom SVG
+                        Create a complex svg shape using https://yqnn.github.io/svg-path-editor/
+                        place the path you have created inside the svg tag and give it some properties. 
+                        Play around with different kinds of transforms -->
+        
+  <svg>
+  </svg>
+
+  <script>
+    // Your D3 code goes here
+    d3.select("svg")
+      .append("path")
+      .attr(
+        "d",
+        "M10 30 A 20 20, 0, 1, 1, 50 30 A 20 20, 0, 1, 1, 90 30 Q 90 60, 50 90 Q 10 60, 10 30 Z"
+      )
+      .attr("fill", "red")
+      .attr("stroke", "black")
+      .attr("stroke-width", 2)
+      .attr("transform", "translate(150, 50) scale(1, 1)");
+    </script>
+</body>
+</html>
